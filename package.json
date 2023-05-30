@@ -1,4 +1,6 @@
 {
+  
+  "homepage": "http://mbekana.github.io/mikas_portfolio",
   "name": "awesome-react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -28,6 +30,8 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d build",
     "build": "react-scripts build",
     "format": "prettier --write .",
     "test": "react-scripts test",
@@ -52,6 +56,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^5.0.0",
     "prettier": "^2.3.2"
   }
 }
