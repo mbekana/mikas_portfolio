@@ -30,8 +30,8 @@
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
-    "predeploy":"npm run --openssl-legacy-provider build",
-    "deploy":"gh-pages -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "format": "prettier --write .",
     "test": "react-scripts test",
